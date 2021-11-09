@@ -7,4 +7,8 @@ fs.readFile('arquivo.txt','utf8',(err,data)=>{
     console.log(data)
 });
 
+const a = 10;
+const b = 5;
+
+console.log(a * b);
 
