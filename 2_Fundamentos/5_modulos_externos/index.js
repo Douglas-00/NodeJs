@@ -8,3 +8,7 @@ console.log(args)
 const nome = args['name']
 
 console.log(nome)
+
+const profissao = args['profissao']
+
+console.log(`O nome dele é ${nome} e a profissao é ${profissao}`)
