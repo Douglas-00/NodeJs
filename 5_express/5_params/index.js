@@ -12,7 +12,6 @@ const basePath = path.join(__dirname,'src');
 
 app.get('/users/:id',(req,res)=>{
     const id = req.params.id
-
     //leitura da tabela users, resgatar um usuário
     console.log(`Estamos buscando pelo usuário: ${id}`)
 

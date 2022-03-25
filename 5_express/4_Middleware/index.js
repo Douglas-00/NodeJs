@@ -13,6 +13,7 @@ const basePath = path.join(__dirname,'src');
 //exemplo verificar se o usuario esta logado
 
 const checkAuth = function(req,res,next){
+    //verifica se o suario tá logado tendo resposta 
     req.authStatus = true
     if(req.authStatus){
         console.log('Está logado, pode continuar')

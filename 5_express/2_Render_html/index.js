@@ -6,7 +6,7 @@ const port = 3000 //Variavel de ambiente
 
 const path = require("path")
 //Buscando o Diretorio base e os arquivos
-const basePath = path.join(__dirname,'src');
+const basePath = path.join(__dirname,'template');
 //------------------------------------------//
 
 

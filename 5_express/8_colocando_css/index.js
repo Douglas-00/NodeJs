@@ -18,7 +18,8 @@ app.use(
 
 app.use(express.json())
 
-
+//Arquivos estáticos
+app.use(express.static('public'))
 app.use('/users',users)
 
 

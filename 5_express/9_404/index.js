@@ -1,5 +1,5 @@
 const express = require('express')
-
+const router = require('router')
 const app = express()
 
 const port = 3000 //Variavel de ambiente
@@ -18,10 +18,16 @@ app.use(
 
 app.use(express.json())
 
-
+//Arquivos estáticos
+app.use(express.static('public'))
 app.use('/users',users)
 
-
+router.get('/',(req,res)=>{
+    res.sendFile(`${basePath}/Index.html`)
+})
+app.use(function(req, res, next) {
+    res.status(404).sendFile(`${basePath}/404.html`)
+})
 
 
 

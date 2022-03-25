@@ -28,6 +28,9 @@ router.get('/:id',(req,res)=>{
     console.log(`Estamos buscando pelo usuário: ${id}`)
 
 
-    res.sendFile(`${basePath}.html`)
+    res.sendFile(`${basePath}/Index.html`)
+})
+router.get('/',(req,res)=>{
+    res.sendFile(`${basePath}/Index.html`)
 })
 module.exports = router;
