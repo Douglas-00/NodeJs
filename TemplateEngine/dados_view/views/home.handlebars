@@ -1,0 +1,8 @@
+<h1>Helloo</h1>
+{{!-- mostrando estrutura if  --}}
+{{#if auth}}
+    <p>Você está autenticado, <a href="/dash">clique aqui </a> para acessar a área de membros!</p>
+{{/if}}
+{{!-- Recebendo dados do back no front  --}}
+<p>O nome do usuario é {{data.name}} {{data.surname}} e idade {{data.age}}</p>
+<h1>{{palavra}}</h1>
